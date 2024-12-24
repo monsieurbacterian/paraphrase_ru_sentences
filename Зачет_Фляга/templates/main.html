@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перефразирование текста</title>
+</head>
+<body>
+    <h1>Перефразирование текста</h1>
+    <form method="POST">
+        <textarea name="text" rows="5" cols="50" placeholder="Введите текст для перефразирования">{{ original_text }}</textarea>
+        <br><br>
+        <button type="submit">Перефразировать</button>
+    </form>
+    <h2>Результат:</h2>
+    <p><strong>Исходный текст:</strong> {{ original_text }}</p>
+    <p><strong>Перефразированный текст:</strong> {{ paraphrased_text }}</p>
+</body>
+</html>
